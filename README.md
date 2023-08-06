@@ -13,7 +13,7 @@ git clone https://github.com/Snapwhiz914/VirtualSoundboard
 cd VirtualSoundboard
 pip3 install -r requirements.txt
 ```
-In order to be able to play sound as if it was coming from your microphone (ie. discord use), you'll need to install a software for your OS that can do this. I use (VB Cabke)[https://vb-audio.com/Cable/] for Windows.
+In order to be able to play sound as if it was coming from your microphone (ie. discord use), you'll need to install a software for your OS that can do this. I use [VB Cable](https://vb-audio.com/Cable/) for Windows.
 
 ## Usage
 Open a Command Prompt or Terminal in the VirtualSoundboard directory
