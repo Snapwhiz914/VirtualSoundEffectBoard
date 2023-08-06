@@ -1,0 +1,4 @@
+fastapi==0.88.0
+PyAudio==0.2.12
+pynput==1.7.6
+wxPython==4.2.1
