@@ -34,7 +34,7 @@ python3 conf_ui.py
    - Toggle Input Mode: <kbd>alt</kbd> + <kbd>[</kbd>
    - Toggle Mute: <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>m</kbd> (Note this one cannot be changed in discord)
    - Push to Talk: <kbd>alt</kbd> + <kbd>]</kbd>
-  (These are also the default options)
+ - (These keybinds are also the default options)
  - Whatever you change in the keybinds menu you must also change in the discord menus to be the same. Note that Toggle Voice Input mode (Toggle VAD) needs to be added manually in the Keybinds menu.
 
 ## Notes & Recommendations
