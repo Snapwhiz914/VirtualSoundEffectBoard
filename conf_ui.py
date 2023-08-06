@@ -5,7 +5,7 @@ import pyaudio
 from pynput.keyboard import Listener, Key, KeyCode
 
 app = wx.App()
-window = wx.Frame(None, title="Soundboard", size=(500, 250))
+window = wx.Frame(None, title="VSB", size=(500, 250))
 nb = wx.Notebook(window)
 
 def get_confblock(block_name):
@@ -16,6 +16,13 @@ def set_confblock(block_name, block):
     j = json.load(open("conf.json", 'r'))
     j[block_name] = block
     json.dump(j, open("conf.json", 'w'))
+
+try:
+    open('conf.json')
+except FileNotFoundError:
+    f = open('conf.json', 'w')
+    f.write('''{"sounds": [], "outputs": [], "keybinds": {"toggle_vc_mode": [ "alt", "[" ], "mute": [ "ctrl", "shift", "m" ], "ptt": [ "alt", "]" ]}}''')
+    f.close()
 
 class SoundsEditor(wx.Panel):
     def __init__(self, parent): 
@@ -65,7 +72,7 @@ class SoundsEditor(wx.Panel):
         set_confblock("sounds", self.current_sounds)
     
     def on_add_b(self, event):
-        with wx.FileDialog(self, "Choose an Audio File", style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST) as fileDialog:
+        with wx.FileDialog(self, "Choose an Audio File", style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST, wildcard="WAV Audio files (*.wav)|*.wav") as fileDialog:
             if fileDialog.ShowModal() == wx.ID_CANCEL:
                 return
             sound = {
