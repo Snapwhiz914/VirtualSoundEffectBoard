@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Soundboard</title>
+    <script>
+        function sendRequest(url) {
+            {
+                fetch(url)
+                    .then(response => console.log(response))
+                    .catch(error => {
+                        console.error(error)
+                        document.getElementsByTagName("h1")[0].innerHTML = String(error)
+                });
+            }
+        }
+    </script>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #202324;
+      margin: 0;
+      padding: 2%;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 15px;
+    }
+    
+    .gi {
+      padding: 10px;
+      text-align: center;
+      background-color: darkgrey;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      cursor: pointer;
+      white-space: normal;
+      color:black;
+      font-size: x-large;
+    }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: red;"></h1>
+    <div class="grid-container">
+        {buttons}
+    </div>
+</body>
+</html>
