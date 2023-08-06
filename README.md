@@ -14,6 +14,7 @@ cd VirtualSoundboard
 pip3 install -r requirements.txt
 ```
 In order to be able to play sound as if it was coming from your microphone (ie. discord use), you'll need to install a software for your OS that can do this. I use (VB Cabke)[https://vb-audio.com/Cable/] for Windows.
+
 ---
 ## Configuration
 To add sounds, change sound outputs and edit discord keybinds, use the configuration UI:
@@ -26,4 +27,5 @@ For the Keybinds section, I recommend using a keybind that won't interfere with 
  - Toggle Input Mode: <kbd>alt</kbd> + <kbd>[</kbd>
  - Toggle Mute: <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>m</kbd> (Note this one cannot be changed in discord)
  - Push to Talk: <kbd>alt</kbd> + <kbd>]</kbd>
+(These are also the default options)
 Whatever you change in this menu you must also change in the discord menu. Note that Toggle Voice Input mode (Toggle VAD) needs to be added manually in the Keybinds menu. 
