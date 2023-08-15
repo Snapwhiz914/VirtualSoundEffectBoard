@@ -2,7 +2,7 @@
 ## Overview
 A soundboard software that:
  - Doesn't need any proprietary hardware
- - Hosts a website accessible from virtually any device
+ - Hosts a website to play sounds with, accessible from virtually any device
  - Can automatically change to Push-To-Talk mode on Discord for better sound quality over calls
  - Can automatically mute a discord call after playing
 
