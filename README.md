@@ -38,6 +38,6 @@ python3 conf_ui.py
  - Whatever you change in the keybinds menu you must also change in the discord menus to be the same. Note that Toggle Voice Input mode (Toggle VAD) needs to be added manually in the Keybinds menu.
 
 ## Notes & Recommendations
- - This software was made on a Python 3.9 environment running on a Windows 10 PC. It uses FastAPI to host the website, pynput to automatically press keybinds, and pyaudio & wav to play sound files
+ - This software was made on a Python 3.9 environment running on a Windows 10 PC. It uses ```fastapi``` to host the website, ```pynput``` to automatically press keybinds, and ```pyaudio``` & ```wav``` to play sound files
  - I use an old Kindle Fire (3rd gen) as my trigger device. Theoretically, any device with a web browser should work.
  - I recommend making your trigger device's display always on.
